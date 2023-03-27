@@ -1484,12 +1484,8 @@ textarea.input {
 	}
 
 	.services_container {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 1.5rem;
-	}
-
-	.services_content {
-		padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+		grid-template-columns: 330px;
+		gap: 5rem;
 	}
 
 	.contact_container {
@@ -1533,6 +1529,21 @@ textarea.input {
 	}
 
 	.portfolio_popup-close {
+		top: 0.5rem;
+	}
+
+	.services_popup-inner {
+		width: 420px;
+		padding: 2.8rem 1.5rem 2.5rem;
+		align-items: center;
+	}
+
+	.services_popup-content {
+		grid-template-columns: 1fr;
+		row-gap: 1.6rem;
+	}
+
+	.services_popup-close {
 		top: 0.5rem;
 	}
 }
@@ -1599,16 +1610,9 @@ textarea.input {
 		text-align: justify;
 	}
 
-	.services_modal-content {
-		padding: 4.5rem 1.5rem 2.5rem;
-	}
-
-	.services_modal-description {
-		padding: 0;
-	}
-
 	.contact_container,
-	.work_container {
+	.work_container,
+	.services_container {
 		grid-template-columns: 300px;
 	}
 
@@ -1683,7 +1687,8 @@ textarea.input {
 	.contact_container,
 	.advantage_container,
 	.compare_container,
-	.work_container {
+	.work_container,
+	.services_container {
 		grid-template-columns: 1fr;
 	}
 
