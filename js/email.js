@@ -2,7 +2,6 @@
 
 const contactForm = document.getElementById("contact-form"),
 	contactName = document.getElementById("contact-name"),
-	contactEmail = document.getElementById("contact-email"),
 	contactTel = document.getElementById("contact-tel"),
 	contactMessage = document.getElementById("contact-message"),
 	errorMessage = document.getElementById("error-message")
@@ -12,7 +11,6 @@ const sendEmail = e => {
 
 	if (
 		contactName.value === "" ||
-		contactEmail.value === "" ||
 		contactTel.value === "" ||
 		contactMessage.value === ""
 	) {
@@ -39,7 +37,6 @@ const sendEmail = e => {
 				}
 			)
 		contactName.value = ""
-		contactEmail.value = ""
 		contactTel.value = ""
 		contactMessage.value = ""
 	}
